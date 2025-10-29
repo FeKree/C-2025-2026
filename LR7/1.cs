@@ -10,12 +10,8 @@ public static class lr6
         Console.WriteLine(" массив  {0}", string.Join(", ", mas));
         string s1 = new string(mas);
         Console.WriteLine("Исходная строка: \"{0}\"", s1);
-
-        // Шаг 3: Копирование исходной строки в новую
         string cop = string.Copy(s1);
         Console.WriteLine("Скопирована строка: \"{0}\"", cop);
-
-        // Шаг 4: Реверс строки — переворот порядка символов
         char[] masrevers = cop.ToCharArray();
         Array.Reverse(masrevers);
         string strreversed = new string(masrevers);
